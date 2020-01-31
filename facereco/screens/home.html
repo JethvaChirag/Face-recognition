@@ -14,11 +14,11 @@
 
             <form style="flex-direction:column" id="profile">
                 {% csrf_token %}
-                First name: <input id="fname" type="text"/><br>
-                Last name: <input id="lname" type="text"/><br>
-                Mobile no: <input id='mno' type="number"/><br>
-                In Time: <input id='intime' type="time"/><br>
-                Out Time: <input id='outtime' type="time"/><br>
+                First name: <input id="fname" type="text" name='First name'/><br>
+                Last name: <input id="lname" type="text" name='Last name'/><br>
+                Mobile no: <input id='mno' type="number" name='Mobile number'/><br>
+                In Time: <input id='intime' type="time" name='In time'/><br>
+                Out Time: <input id='outtime' type="time" name='Out time'/><br>
                 <input type='submit' value='SUBMIT' id="button">
             </form>
 
