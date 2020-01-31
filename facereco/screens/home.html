@@ -1,0 +1,34 @@
+{% load static %}
+<html>
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="{% static 'css/base.css' %}"/>
+        
+    </head>
+
+    <body style="flex-direction: row">
+
+        <h1>HTTP 401</h1>
+        
+        <div id="profile_div" style="height: 500px;width:500px;float:left">
+
+            <form style="flex-direction:column" id="profile">
+                {% csrf_token %}
+                First name: <input id="fname" type="text"/><br>
+                Last name: <input id="lname" type="text"/><br>
+                Mobile no: <input id='mno' type="number"/><br>
+                In Time: <input id='intime' type="time"/><br>
+                Out Time: <input id='outtime' type="time"/><br>
+                <input type='submit' value='SUBMIT' id="button">
+            </form>
+
+        </div>
+        <div style="height: 500px;width:500px;background: crimson;float:left"></div>
+        <div style="height: 500px;width:500px;background:cornflowerblue;float:left"></div>
+    
+    </body>
+    <script type='text/javascript' src="static/js/jquery.min.js"> 
+    </script>
+    <script type='text/javascript' src="static/js/base.js"> 
+    </script>
+</html>
