@@ -18,7 +18,7 @@ firebaseConfig = {
 firebase=pyrebase.initialize_app(firebaseConfig)
 auth=firebase.auth()
 db=firebase.database()
-user = auth.sign_in_with_email_and_password('17ce038@charusat.edu.in', 'ChJethva')
+user = auth.sign_in_with_email_and_password('17ce038@charusat.edu.in', 'Your Password')
 print("Credentials: ")
 authToken=auth.current_user.get('localId')
 print(authToken)
