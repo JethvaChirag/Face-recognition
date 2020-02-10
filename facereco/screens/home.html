@@ -19,16 +19,27 @@
                 Mobile no: <input id='mno' type="number" name='Mobile number'/><br>
                 In Time: <input id='intime' type="time" name='In time'/><br>
                 Out Time: <input id='outtime' type="time" name='Out time'/><br>
-                <input type='submit' value='SUBMIT' id="button">
+                <input type='submit' value='SUBMIT' id="button"><br>
+                
+                
             </form>
 
         </div>
-        <div style="height: 500px;width:500px;background: crimson;float:left"></div>
-        <div style="height: 500px;width:500px;background:cornflowerblue;float:left"></div>
+        <div style="height: 500px;width:500px;background: crimson;float:left">
+            <video id='vid'>Not Supported</video>
+       </div>
+        <div style="height: 500px;width:500px;background:cornflowerblue;float:left">
+        <button id="snap">Capture</button>
+        </div>
+        <div style="height: 500px;width:500px;background:yellow;float:left">
+            <canvas id='canvas' width="640" height='480'>
+            </div>
     
     </body>
     <script type='text/javascript' src="static/js/jquery.min.js"> 
     </script>
     <script type='text/javascript' src="static/js/base.js"> 
+    </script>
+    <script type='text/javascript' src="static/js/video.js"> 
     </script>
 </html>

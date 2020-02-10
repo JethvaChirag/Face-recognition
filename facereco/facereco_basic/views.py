@@ -3,6 +3,9 @@ from django.http import HttpResponse
 from mtcnn import MTCNN
 from cv2 import cv2
 import pyrebase
+from django.urls import reverse
+
+
 
 firebaseConfig = {
     'apiKey': "AIzaSyD7H6ZxUcR0M9acTTrg7cyV0Dxu4C27cUU",
@@ -18,7 +21,7 @@ firebaseConfig = {
 firebase=pyrebase.initialize_app(firebaseConfig)
 auth=firebase.auth()
 db=firebase.database()
-user = auth.sign_in_with_email_and_password('17ce038@charusat.edu.in', 'Your Password')
+user = auth.sign_in_with_email_and_password('cjethva8@gmail.com', '123456')
 print("Credentials: ")
 authToken=auth.current_user.get('localId')
 print(authToken)
@@ -58,8 +61,16 @@ def addPerson(request):
         print(fname)
         print(lname)
         print(mno)
-        db.child('dummy').child('authenticated').child(authToken).set(data)
+        db.child('dummy2').child('authenticated').child(authToken).set(data)
 
     return HttpResponse("<h1>form submitted</h1>")
+
+def logs(request):
+    return render(request,'logs.html')
+
+
+def logsOf(request):
+    
+    return render(request,'logsOf.html')
     
 

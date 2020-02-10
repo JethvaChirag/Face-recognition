@@ -1,0 +1,40 @@
+{% load static %}
+<html>
+  <head></head>
+  <style>
+        #result {
+         position: absolute;
+         width: 100%;
+         max-width:870px;
+         cursor: pointer;
+         overflow-y: auto;
+         max-height: 400px;
+         box-sizing: border-box;
+         z-index: 1001;
+        }
+        .link-class:hover{
+         background-color:#f1f1f1;
+        }
+        .span{
+            size: 18;
+            color: #C0C0C0;
+        }
+        </style>
+  <body>
+    
+    <script type="text/javascript" src="static/js/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase.js"></script>
+    <script type="text/javascript" src="{% static 'js/logs.js'%}"></script>
+    
+  <input type="date" id="date"/>
+  <input type="text" name="search" id="search" placeholder="Search Employee Details" class="form-control" />
+  <button class="xxx" id="butt">Search</button>
+
+   <ul class="list-group" id="result"></ul>
+  
+   <br />
+   
+   
+  </body>
+</html>

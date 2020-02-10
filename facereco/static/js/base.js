@@ -1,7 +1,10 @@
 $(document).on('submit','#profile',function(e){
     var nullValues=0;
     var mobilenumber=false;
-    var input=document.querySelectorAll('input')
+    var input=document.querySelectorAll('input');
+    
+
+
     for(var i =0;i<input.length;i++){
         if(input[i].value==''){
             alert(input[i].name+' cannot be null.');

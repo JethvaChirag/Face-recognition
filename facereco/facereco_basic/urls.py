@@ -10,7 +10,9 @@ urlpatterns=[
     path('recognise',views.recognise,name='recognition'),
     path('home',views.home,name='home'),
     path('user/addPerson',views.addPerson,name='submitted'),
-
+    path('logs',views.logs,name="logs"),
+    path('logsOf',views.logsOf,name="logsOf")
+    
 ]
 
 

@@ -48,6 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
 ]
 
 ROOT_URLCONF = 'facereco.urls'
@@ -128,4 +129,7 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT=os.path.join(os.path.dirname(BASE_DIR),"static_cdn")
-MEDIA_ROOT=os.path.join(os.path.dirname(BASE_DIR),"media_cdn")
+#MEDIA_ROOT=os.path.join(os.path.dirname(BASE_DIR),"media_cdn")
+MEDIA_ROOT="C:\\"
+
+CORS_ORIGIN_ALLOW_ALL = True
